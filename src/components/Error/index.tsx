@@ -1,4 +1,9 @@
 import React from "react";
+import { FiAlertTriangle } from "react-icons/fi";
+
+import { ErrorContainer } from "./style";
+
+import colors from "../../styles/colors";
 
 interface Props {
   message: string;
@@ -6,9 +11,10 @@ interface Props {
 
 const Error = ({ message }: Props) => {
   return (
-    <div>
+    <ErrorContainer>
+      <FiAlertTriangle size={24} color={colors.red} />
       <p>{message}</p>
-    </div>
+    </ErrorContainer>
   );
 };
 

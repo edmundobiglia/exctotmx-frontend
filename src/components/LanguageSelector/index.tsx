@@ -1,6 +1,8 @@
 import React from "react";
 import generateLCIDList from "../../utils/generateLCIDList";
 
+import { LanguageSelectorSection, SelectionBox } from "./style";
+
 const LCIDList = generateLCIDList();
 
 interface Props {
@@ -16,16 +18,18 @@ const LanguageSelector = ({ languageSetter, languageType }: Props) => {
   };
 
   return (
-    <div>
-      <select defaultValue="" onChange={handleLanguageSelection}>
-        <option value="" disabled></option>
-        {LCIDList.map((LCID) => (
-          <option key={`${languageType}_${LCID}`} value={LCID}>
-            {LCID}
-          </option>
-        ))}
-      </select>
-    </div>
+    <LanguageSelectorSection>
+      <SelectionBox>
+        <select defaultValue="" onChange={handleLanguageSelection}>
+          <option value="" disabled></option>
+          {LCIDList.map((LCID) => (
+            <option key={`${languageType}_${LCID}`} value={LCID}>
+              {LCID}
+            </option>
+          ))}
+        </select>
+      </SelectionBox>
+    </LanguageSelectorSection>
   );
 };
 
