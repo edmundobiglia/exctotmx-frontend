@@ -2,7 +2,7 @@
 
 <p align="center"><img src="./src/assets/demo.gif" width="550"></p>
 
-This is the **frontend** part for simple project **EXCtoTMX** developed with **TypeScript** and **React.js**. This minimal app converts a bilingual **.xlsx** file into a **TMX** file to be imported into translation software (CAT tools).
+This is the **frontend** part for simple project **EXCtoTMX** developed with **TypeScript** and **React.js** (repo for the frontend part <a href="https://github.com/edmundobiglia/exctotmx-backend">here</a>). This minimal app converts a bilingual **.xlsx** file into a **TMX** file to be imported into translation software (CAT tools).
 
 **TMX** is a type of XML file that contains translation units (source text and corresponding translations) that can be imported into **translation memories** (TMs) from translation software. A TM is a database of translations which is populated as translators translate source files.
 
