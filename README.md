@@ -16,7 +16,7 @@ The TMX file is an XML file that follows a common structure, so this app basical
 
 The frontend does some validation, showing an error if:
 
-- File is not a .xlsx file (checks the extension as well as the MIME type of the updloaded file)
+- The file is not a .xlsx file (checks the extension as well as the MIME type of the uploaded file)
 - A source and target language is not selected
 - Source and target languages are the same (they must be different)
 
