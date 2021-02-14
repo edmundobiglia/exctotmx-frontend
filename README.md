@@ -14,7 +14,7 @@ Having worked as a translator for many years, I often found myself in a situatio
 
 The TMX file is an XML file that follows a common structure, so this app basically allows you to upload a bilingual .xlsx file (source text in column A and translations in column B). The file is read and processed in the backend to generate the proper XML data, which is in turn sent to the frontend for download.
 
-The frontend does some validation, **showing an error** if:
+The frontend does some validation, showing an error if:
 
 - File is not a .xlsx file (checks the extension as well as the MIME type of the updloaded file)
 - A source and target language is not selected
