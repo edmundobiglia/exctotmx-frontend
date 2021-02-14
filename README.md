@@ -2,9 +2,9 @@
 
 <p align="center"><img src="./src/assets/demo.gif" width="550"></p>
 
-This is the **frontend** part for simple project **EXCtoTMX** developed in **TypeScript** and **React.js**. This minimal app converts a bilingual **.xlsx** file into a **TMX** file to be imported into translation software (CAT tools).
+This is the **frontend** part for simple project **EXCtoTMX** developed with **TypeScript** and **React.js**. This minimal app converts a bilingual **.xlsx** file into a **TMX** file to be imported into translation software (CAT tools).
 
-**TMX** is a type of XML file that contains translation units (source text and corresponding translations) and can be imported into **translation memories** from CAT (computer-assisted translation) software. A translation memory is a database of translations which is populated as translators translate source files.
+**TMX** is a type of XML file that contains translation units (source text and corresponding translations) that can be imported into **translation memories** (TMs) from translation software. A TM is a database of translations which is populated as translators translate source files.
 
 ## Motivation
 
@@ -12,9 +12,9 @@ Having worked as a translator for many years, I often found myself in a situatio
 
 ## How it works
 
-The TMX file is an XML file that follows a common structure, so this app basically allows you upload a bilingual .xlsx file (containing source text in column A and corresponding translations in column B). It then reads the .xlsx, generates an array of `[source, translation]` tuples, then maps it into the proper XML translation units. The app then combines all translations units into one single big string, which is used to generate the TMX file on the frontend.
+The TMX file is an XML file that follows a common structure, so this app basically allows you upload a bilingual .xlsx file (source text in column A and translations in column B). The file is read and processed in the backend to generate the proper XML data, which is in turn sent to the frontend for download.
 
-The frontend also does some validation, **showing an error** if:
+The frontend does some validation, **showing an error** if:
 
 - File is not a .xlsx file (checks the extension as well as the MIME type of the updloaded file)
 - A source and target language is not selected
