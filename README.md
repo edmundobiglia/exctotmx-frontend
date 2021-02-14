@@ -12,7 +12,7 @@ Having worked as a translator for many years, I often found myself in a situatio
 
 ## How it works
 
-The TMX file is a XML file that follows a common structure, so this app basically allows you upload a bilingual .xlsx file (containing source text in column A and corresponding translations in column B). It then reads the .xlsx, generates an array of `[source, translation]` tuples, then maps it into the proper XML translation units. The app then combines all translations units into one single big string, which is used to generate the TMX file on the frontend.
+The TMX file is an XML file that follows a common structure, so this app basically allows you upload a bilingual .xlsx file (containing source text in column A and corresponding translations in column B). It then reads the .xlsx, generates an array of `[source, translation]` tuples, then maps it into the proper XML translation units. The app then combines all translations units into one single big string, which is used to generate the TMX file on the frontend.
 
 The frontend also does some validation, **showing an error** if:
 
